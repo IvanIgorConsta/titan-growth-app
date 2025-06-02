@@ -1,5 +1,10 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ]
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "installCommand": "npm install --include=dev",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
 }
